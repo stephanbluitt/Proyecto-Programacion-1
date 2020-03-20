@@ -1,7 +1,6 @@
 package Logico;
 
 public class ControlVacunacion {
-
 	private String vacuna;
 	private String descripcion;
 	public ControlVacunacion(String vacuna, String descripcion) {
@@ -21,6 +20,4 @@ public class ControlVacunacion {
 	public void setDescripcion(String descripcion) {
 		this.descripcion = descripcion;
 	}
-	
-	
 }
