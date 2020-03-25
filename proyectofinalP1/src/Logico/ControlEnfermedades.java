@@ -4,11 +4,13 @@ public class ControlEnfermedades {
 
 	private String nombreEnfermedad;
 	private String descripcionEnfermedad;
+	
 	public ControlEnfermedades(String nombreEnfermedad, String descripcionEnfermedad) {
 		super();
 		this.nombreEnfermedad = nombreEnfermedad;
 		this.descripcionEnfermedad = descripcionEnfermedad;
 	}
+	
 	public String getNombreEnfermedad() {
 		return nombreEnfermedad;
 	}

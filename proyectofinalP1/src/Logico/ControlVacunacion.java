@@ -4,11 +4,13 @@ public class ControlVacunacion {
 
 	private String vacuna;
 	private String descripcion;
+	
 	public ControlVacunacion(String vacuna, String descripcion) {
 		super();
 		this.vacuna = vacuna;
 		this.descripcion = descripcion;
 	}
+	
 	public String getVacuna() {
 		return vacuna;
 	}
