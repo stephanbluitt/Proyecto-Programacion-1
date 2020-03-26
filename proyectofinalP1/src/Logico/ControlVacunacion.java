@@ -1,6 +1,7 @@
 package Logico;
 
 public class ControlVacunacion {
+	
 	private String vacuna;
 	private String descripcion;
 	
