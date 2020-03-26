@@ -10,11 +10,11 @@ public class Doctor extends Persona {
 		Especialidad = especialidad;
 	}
 
-	public String getEspecialidad() {
+	public String getEspecialidad(){
 		return Especialidad;
 	}
 
-	public void setEspecialidad(String especialidad) {
+	public void setEspecialidad(String especialidad){
 		Especialidad = especialidad;
 	}
 	
