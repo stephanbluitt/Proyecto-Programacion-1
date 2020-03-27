@@ -34,7 +34,7 @@ public class Clinica {
 		return misDoctores;
 	}
 
-	public void setMisDoctores(ArrayList<Doctor> misDoctores) {
+	public void setMisDoctores(ArrayList<Doctor> misDoctores ) {
 		this.misDoctores = misDoctores;
 	}
 
