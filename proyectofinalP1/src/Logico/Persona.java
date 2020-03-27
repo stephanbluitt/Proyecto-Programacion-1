@@ -10,6 +10,8 @@ public abstract class Persona {
 	protected String correoElectronico;
 	protected String fechadenacimiento;
 	protected String sexo;
+
+	
 	public Persona(String id, String nombre, String apellido, String direccion, String telefono, String correoElectronico,
 			String fechadenacimiento, String sexo) {
 		super();
@@ -22,6 +24,8 @@ public abstract class Persona {
 		this.fechadenacimiento = fechadenacimiento;
 		this.sexo = sexo;
 	}
+	
+
 	public String getid() {
 		return id;
 	}

@@ -10,6 +10,7 @@ public class ControlVacunacion {
 		this.vacuna = vacuna;
 		this.descripcion = descripcion;
 	}
+	
 	public String getVacuna() {
 		return vacuna;
 	}

@@ -10,6 +10,7 @@ public class ControlEnfermedades {
 		this.nombreEnfermedad = nombreEnfermedad;
 		this.descripcionEnfermedad = descripcionEnfermedad;
 	}
+	
 	public String getNombreEnfermedad() {
 		return nombreEnfermedad;
 	}
