@@ -87,6 +87,7 @@ public class Main {
 		clini.insertarVacunasbajovigilancia(aux);	
 	}		
 //CREAR CONSULTA
+	
 	private static void crearConsulta(String diaPautado,String mesPautado, String anoPautado,int idPaciente,int IdDoctor) {
 	String fechaPautada = diaPautado+"-"+mesPautado+"-"+anoPautado;
 	consulta aux = new consulta(fechaPautada,idPaciente,IdDoctor,null,false,false); //diagnostico, realizada o destacada no se marcan el crear porque no ha pasado
