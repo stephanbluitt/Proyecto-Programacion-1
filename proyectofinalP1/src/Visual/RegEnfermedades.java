@@ -20,10 +20,10 @@ import javax.swing.border.EtchedBorder;
 public class RegEnfermedades extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField txtJlnln;
-	private JTextField textField_3;
+	private JTextField txtNombreEnfermedad;
+	private JTextField txtSintomasEnfermedad;
+	private JTextField txtDescripcionEnfermedad;
+	private JTextField txtEstadoEnfermedad;
 
 	/**
 	 * Launch the application.
@@ -58,48 +58,48 @@ public class RegEnfermedades extends JDialog {
 			contentPanel.add(panel);
 			panel.setLayout(null);
 			{
-				JLabel lblNombre = new JLabel("Nombre:");
-				lblNombre.setBounds(10, 26, 73, 14);
-				panel.add(lblNombre);
+				JLabel lblNombreEnfermedad = new JLabel("Nombre:");
+				lblNombreEnfermedad.setBounds(10, 26, 73, 14);
+				panel.add(lblNombreEnfermedad);
 			}
 			{
-				JLabel lblSintomas = new JLabel("S\u00EDntomas:");
-				lblSintomas.setBounds(10, 66, 73, 14);
-				panel.add(lblSintomas);
+				JLabel lblSintomasEnfermedad = new JLabel("S\u00EDntomas:");
+				lblSintomasEnfermedad.setBounds(10, 66, 73, 14);
+				panel.add(lblSintomasEnfermedad);
 			}
 			{
-				JLabel lblNewLabel = new JLabel("Descripci\u00F3n:");
-				lblNewLabel.setBounds(10, 146, 83, 14);
-				panel.add(lblNewLabel);
+				JLabel lblDescripcionEnfermedad = new JLabel("Descripci\u00F3n:");
+				lblDescripcionEnfermedad.setBounds(10, 146, 83, 14);
+				panel.add(lblDescripcionEnfermedad);
 			}
 			{
-				JLabel lblEstado = new JLabel("Estado:");
-				lblEstado.setBounds(10, 106, 46, 14);
-				panel.add(lblEstado);
+				JLabel lblEstadoEnfermedad = new JLabel("Estado:");
+				lblEstadoEnfermedad.setBounds(10, 106, 46, 14);
+				panel.add(lblEstadoEnfermedad);
 			}
 			{
-				textField = new JTextField();
-				textField.setBounds(88, 23, 316, 20);
-				panel.add(textField);
-				textField.setColumns(10);
+				txtNombreEnfermedad = new JTextField();
+				txtNombreEnfermedad.setBounds(88, 23, 316, 20);
+				panel.add(txtNombreEnfermedad);
+				txtNombreEnfermedad.setColumns(10);
 			}
 			{
-				textField_1 = new JTextField();
-				textField_1.setBounds(88, 63, 316, 20);
-				panel.add(textField_1);
-				textField_1.setColumns(10);
+				txtSintomasEnfermedad = new JTextField();
+				txtSintomasEnfermedad.setBounds(88, 63, 316, 20);
+				panel.add(txtSintomasEnfermedad);
+				txtSintomasEnfermedad.setColumns(10);
 			}
 			{
-				txtJlnln = new JTextField();
-				txtJlnln.setBounds(88, 143, 316, 20);
-				panel.add(txtJlnln);
-				txtJlnln.setColumns(20);
+				txtDescripcionEnfermedad = new JTextField();
+				txtDescripcionEnfermedad.setBounds(88, 143, 316, 20);
+				panel.add(txtDescripcionEnfermedad);
+				txtDescripcionEnfermedad.setColumns(20);
 			}
 			{
-				textField_3 = new JTextField();
-				textField_3.setBounds(88, 103, 86, 20);
-				panel.add(textField_3);
-				textField_3.setColumns(10);
+				txtEstadoEnfermedad = new JTextField();
+				txtEstadoEnfermedad.setBounds(88, 103, 86, 20);
+				panel.add(txtEstadoEnfermedad);
+				txtEstadoEnfermedad.setColumns(10);
 			}
 		}
 		{

@@ -28,9 +28,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 
 public class RegConsulta extends JDialog {
-
 	private final JPanel contentPanel = new JPanel();
-	private JTextField textField;
+	private JTextField txtDiagnostico;
 	private ButtonGroup botones= new ButtonGroup();
 
 	/**
@@ -85,25 +84,25 @@ public class RegConsulta extends JDialog {
 				lblPaciente.setBounds(10, 70, 62, 14);
 				panel_1.add(lblPaciente);
 				
-				JComboBox comboBox = new JComboBox();
-				comboBox.setBounds(88, 19, 96, 20);
-				panel_1.add(comboBox);
-				comboBox.setModel(new DefaultComboBoxModel(new String[] {"<Seleccione>"}));
+				JComboBox cbxDoctor = new JComboBox();
+				cbxDoctor.setBounds(88, 19, 96, 20);
+				panel_1.add(cbxDoctor);
+				cbxDoctor.setModel(new DefaultComboBoxModel(new String[] {"<Seleccione>"}));
 				
-				JComboBox comboBox_1 = new JComboBox();
-				comboBox_1.setBounds(88, 67, 96, 20);
-				panel_1.add(comboBox_1);
-				comboBox_1.setModel(new DefaultComboBoxModel(new String[] {"<Seleccione>"}));
+				JComboBox cbxPaciente = new JComboBox();
+				cbxPaciente.setBounds(88, 67, 96, 20);
+				panel_1.add(cbxPaciente);
+				cbxPaciente.setModel(new DefaultComboBoxModel(new String[] {"<Seleccione>"}));
 				{
 					JLabel lblFecha = new JLabel("Fecha:");
 					lblFecha.setBounds(10, 118, 46, 14);
 					panel_1.add(lblFecha);
 				}
 				{
-					JSpinner spinner = new JSpinner();
-					spinner.setBounds(88, 115, 96, 20);
-					panel_1.add(spinner);
-					spinner.setModel(new SpinnerDateModel(new Date(1585281600000L), new Date(-2201628444000L), new Date(32510952000000L), Calendar.DAY_OF_YEAR));
+					JSpinner spnConsulta = new JSpinner();
+					spnConsulta.setBounds(88, 115, 96, 20);
+					panel_1.add(spnConsulta);
+					spnConsulta.setModel(new SpinnerDateModel(new Date(1585281600000L), new Date(-2201628444000L), new Date(32510952000000L), Calendar.DAY_OF_YEAR));
 				}
 			}
 			{
@@ -118,10 +117,10 @@ public class RegConsulta extends JDialog {
 					panel_1.add(lblDiagn);
 				}
 				{
-					textField = new JTextField();
-					textField.setBounds(86, 19, 116, 20);
-					panel_1.add(textField);
-					textField.setColumns(10);
+					txtDiagnostico = new JTextField();
+					txtDiagnostico.setBounds(86, 19, 116, 20);
+					panel_1.add(txtDiagnostico);
+					txtDiagnostico.setColumns(10);
 				}
 				{
 					JPanel panel_2 = new JPanel();

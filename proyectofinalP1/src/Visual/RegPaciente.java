@@ -29,13 +29,13 @@ import java.awt.event.ActionEvent;
 public class RegPaciente extends JDialog {
 
 	private final JPanel contentPanel = new JPanel();
-	private JTextField textField;
-	private JTextField textField_1;
-	private JTextField textField_2;
-	private JTextField textField_3;
-	private JTextField textField_4;
-	private JTextField textField_5;
-	private JTextField textField_6;
+	private JTextField txtIDPaciente;
+	private JTextField txtApellidoPaciente;
+	private JTextField txtNombrePaciente;
+	private JTextField txtDireccionPaciente;
+	private JTextField txtOcupacionPaciente;
+	private JTextField txtEmailPaciente;
+	private JTextField txtTelPaciente;
 	private ButtonGroup botones= new ButtonGroup();
 
 	/**
@@ -71,15 +71,15 @@ public class RegPaciente extends JDialog {
 			contentPanel.add(panel);
 			panel.setLayout(null);
 			{
-				JLabel lblNewLabel = new JLabel("ID:");
-				lblNewLabel.setBounds(582, 25, 46, 14);
-				panel.add(lblNewLabel);
+				JLabel lblIDPaciente = new JLabel("ID:");
+				lblIDPaciente.setBounds(582, 25, 46, 14);
+				panel.add(lblIDPaciente);
 			}
 			{
-				textField = new JTextField();
-				textField.setBounds(608, 23, 86, 17);
-				panel.add(textField);
-				textField.setColumns(10);
+				txtIDPaciente = new JTextField();
+				txtIDPaciente.setBounds(608, 23, 86, 17);
+				panel.add(txtIDPaciente);
+				txtIDPaciente.setColumns(10);
 			}
 			{
 				JPanel panel_1 = new JPanel();
@@ -88,48 +88,48 @@ public class RegPaciente extends JDialog {
 				panel.add(panel_1);
 				panel_1.setLayout(null);
 				{
-					JLabel lblNewLabel_1 = new JLabel("Nombre:");
-					lblNewLabel_1.setBounds(10, 25, 63, 14);
-					panel_1.add(lblNewLabel_1);
+					JLabel lblNombrePaciente = new JLabel("Nombre:");
+					lblNombrePaciente.setBounds(10, 25, 63, 14);
+					panel_1.add(lblNombrePaciente);
 				}
 				{
-					JLabel lblApellido = new JLabel("Apellido:");
-					lblApellido.setBounds(10, 64, 63, 14);
-					panel_1.add(lblApellido);
+					JLabel lblApellidoPaciente = new JLabel("Apellido:");
+					lblApellidoPaciente.setBounds(10, 64, 63, 14);
+					panel_1.add(lblApellidoPaciente);
 				}
 				{
-					textField_2 = new JTextField();
-					textField_2.setBounds(61, 22, 248, 20);
-					panel_1.add(textField_2);
-					textField_2.setColumns(10);
+					txtNombrePaciente = new JTextField();
+					txtNombrePaciente.setBounds(61, 22, 248, 20);
+					panel_1.add(txtNombrePaciente);
+					txtNombrePaciente.setColumns(10);
 				}
 				{
-					JLabel lblFechaNacimiento = new JLabel("Fecha Nacimiento:");
-					lblFechaNacimiento.setBounds(10, 103, 133, 14);
-					panel_1.add(lblFechaNacimiento);
+					JLabel lblFechaNacimientoPaciente = new JLabel("Fecha Nacimiento:");
+					lblFechaNacimientoPaciente.setBounds(10, 103, 133, 14);
+					panel_1.add(lblFechaNacimientoPaciente);
 				}
 				{
-					JLabel lblDireccion = new JLabel("Direcci\u00F3n:");
-					lblDireccion.setBounds(10, 142, 78, 14);
-					panel_1.add(lblDireccion);
+					JLabel lblDireccionPaciente = new JLabel("Direcci\u00F3n:");
+					lblDireccionPaciente.setBounds(10, 142, 78, 14);
+					panel_1.add(lblDireccionPaciente);
 				}
 				{
-					textField_1 = new JTextField();
-					textField_1.setBounds(61, 61, 248, 20);
-					panel_1.add(textField_1);
-					textField_1.setColumns(10);
+					txtApellidoPaciente = new JTextField();
+					txtApellidoPaciente.setBounds(61, 61, 248, 20);
+					panel_1.add(txtApellidoPaciente);
+					txtApellidoPaciente.setColumns(10);
 				}
 				{
-					textField_3 = new JTextField();
-					textField_3.setBounds(61, 139, 248, 20);
-					panel_1.add(textField_3);
-					textField_3.setColumns(10);
+					txtDireccionPaciente = new JTextField();
+					txtDireccionPaciente.setBounds(61, 139, 248, 20);
+					panel_1.add(txtDireccionPaciente);
+					txtDireccionPaciente.setColumns(10);
 				}
 				
-				JSpinner spinner = new JSpinner();
-				spinner.setModel(new SpinnerDateModel(new Date(1585281600000L), new Date(-939326400000L), new Date(1585281600000L), Calendar.DAY_OF_YEAR));
-				spinner.setBounds(137, 100, 68, 20);
-				panel_1.add(spinner);
+				JSpinner spnFechaNacimientoPaciente = new JSpinner();
+				spnFechaNacimientoPaciente.setModel(new SpinnerDateModel(new Date(1585281600000L), new Date(-939326400000L), new Date(1585281600000L), Calendar.DAY_OF_YEAR));
+				spnFechaNacimientoPaciente.setBounds(137, 100, 68, 20);
+				panel_1.add(spnFechaNacimientoPaciente);
 			}
 			
 			JPanel panel_1 = new JPanel();
@@ -138,10 +138,10 @@ public class RegPaciente extends JDialog {
 			panel.add(panel_1);
 			panel_1.setLayout(null);
 			{
-				textField_4 = new JTextField();
-				textField_4.setBounds(84, 81, 81, 20);
-				panel_1.add(textField_4);
-				textField_4.setColumns(10);
+				txtOcupacionPaciente = new JTextField();
+				txtOcupacionPaciente.setBounds(84, 81, 81, 20);
+				panel_1.add(txtOcupacionPaciente);
+				txtOcupacionPaciente.setColumns(10);
 			}
 			{
 				JLabel lblOcupacin = new JLabel("Ocupaci\u00F3n: ");
@@ -149,15 +149,15 @@ public class RegPaciente extends JDialog {
 				panel_1.add(lblOcupacin);
 			}
 			{
-				textField_5 = new JTextField();
-				textField_5.setBounds(57, 130, 248, 20);
-				panel_1.add(textField_5);
-				textField_5.setColumns(10);
+				txtEmailPaciente = new JTextField();
+				txtEmailPaciente.setBounds(57, 130, 248, 20);
+				panel_1.add(txtEmailPaciente);
+				txtEmailPaciente.setColumns(10);
 			}
 			{
-				JLabel lblEmail = new JLabel("E-mail:");
-				lblEmail.setBounds(10, 133, 63, 14);
-				panel_1.add(lblEmail);
+				JLabel lblEmailPaciente = new JLabel("E-mail:");
+				lblEmailPaciente.setBounds(10, 133, 63, 14);
+				panel_1.add(lblEmailPaciente);
 			}
 			{
 				JLabel lblTel = new JLabel("Tel.:");
@@ -165,10 +165,10 @@ public class RegPaciente extends JDialog {
 				panel_1.add(lblTel);
 			}
 			{
-				textField_6 = new JTextField();
-				textField_6.setBounds(57, 32, 108, 20);
-				panel_1.add(textField_6);
-				textField_6.setColumns(10);
+				txtTelPaciente = new JTextField();
+				txtTelPaciente.setBounds(57, 32, 108, 20);
+				panel_1.add(txtTelPaciente);
+				txtTelPaciente.setColumns(10);
 			}
 			{
 				JPanel panel_2 = new JPanel();
@@ -177,16 +177,16 @@ public class RegPaciente extends JDialog {
 				panel_1.add(panel_2);
 				panel_2.setLayout(null);
 				{
-					JRadioButton rdbtnMasculino = new JRadioButton("Masculino");
-					rdbtnMasculino.setBounds(16, 13, 93, 23);
-					panel_2.add(rdbtnMasculino);
-					botones.add(rdbtnMasculino);
+					JRadioButton rdbtnMasculinoPaciente = new JRadioButton("Masculino");
+					rdbtnMasculinoPaciente.setBounds(16, 13, 93, 23);
+					panel_2.add(rdbtnMasculinoPaciente);
+					botones.add(rdbtnMasculinoPaciente);
 				}
 				{
-					JRadioButton rdbtnFemenino = new JRadioButton("Femenino");
-					rdbtnFemenino.setBounds(16, 39, 93, 23);
-					panel_2.add(rdbtnFemenino);
-					botones.add(rdbtnFemenino);
+					JRadioButton rdbtnFemeninoPaciente = new JRadioButton("Femenino");
+					rdbtnFemeninoPaciente.setBounds(16, 39, 93, 23);
+					panel_2.add(rdbtnFemeninoPaciente);
+					botones.add(rdbtnFemeninoPaciente);
 
 				}
 				
