@@ -4,7 +4,7 @@ public class Doctor extends Persona {
 
 	protected String Especialidad;
 
-	public Doctor(int id, String nombre, String apellido, String direccion, String telefono, String correoElectronico,
+	public Doctor(String id, String nombre, String apellido, String direccion, String telefono, String correoElectronico,
 			String fechadenacimiento, String sexo, String especialidad) {
 		super(id, nombre, apellido, direccion, telefono, correoElectronico, fechadenacimiento, sexo);
 		Especialidad = especialidad;
