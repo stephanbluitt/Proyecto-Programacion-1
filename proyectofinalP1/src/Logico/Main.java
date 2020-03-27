@@ -10,11 +10,12 @@ public class Main {
 		crearDoctor("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22","masculino","otorrino");
 		crearEnfermedad("covi19","lo que causa");
 		crearVacuna("ebola","lol");
-		crearConsulta("22","22","22",int idPaciente, int IdDoctor);
+		//crearConsulta("22","22","22",int idPaciente, int IdDoctor);
 		//DONDE SE PASAN LOS DATOS DE CREAR UN PACIENTE
 	}
 //BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
 
+	
 //INGRESAR PACIENTE	
 	private static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String correoElectronico,String dia,String mes,String ano,String sexo,String ocupacion){
 		//String id limite de 11 digitos con guion automatizado a medida que se escribe, parte visual, pero se pasa aqui sin guion 
