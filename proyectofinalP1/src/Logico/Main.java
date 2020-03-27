@@ -12,10 +12,8 @@ public class Main {
 		crearVacuna("ebola","lol");
 		crearConsulta("22","22","22",int idPaciente, int IdDoctor);
 		//DONDE SE PASAN LOS DATOS DE CREAR UN PACIENTE
-		
 	}
-	
-	//BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
+//BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
 
 //INGRESAR PACIENTE	
 	private static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String correoElectronico,String dia,String mes,String ano,String sexo,String ocupacion){
