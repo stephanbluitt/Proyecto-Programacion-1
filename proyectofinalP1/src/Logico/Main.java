@@ -1,7 +1,7 @@
 package Logico;
 
 public class Main {
-	Clinica clini = new Clinica();
+	static Clinica clini = new Clinica();
 	
 	
 	public static void main(String[] args) {	
@@ -12,22 +12,11 @@ public class Main {
 	}
 	
 	
-	public static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String email,String dia,String mes,String ano,String sexo,String ocupacion){//1
-		/*String id="12345678901"; //cedula con guion automatizado a medida que se escribe, parte visual, pero se pasa aqui sin guion 
-		String nombre="Juan";
-		String apellido="Perez";
-		String direccion="Calle 1, #1j, cien fuegos";
-		String telefono="8095752121";
-		String email="hola@email.com";
-		String dia="12";
-		String mes="12";
-		String ano="2012";
-		String sexo="femenino"; //radiobottom
-		String ocupacion="jardinero";
-		*/
-		
-		 //dia+"-"+mes+"-"ano; CON 3 SPINNERS, antes de ingresar todo, no debe permitir que todo este vacio.		
-		String fechaNacimiento=dia+"-"+mes+"-"+ano;
+	public static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String email,String dia,String mes,String ano,String sexo,String ocupacion){
+		//String id limite de 11 digitos con guion automatizado a medida que se escribe, parte visual, pero se pasa aqui sin guion 
+		//fecha de nacimiento = dia+"-"+mes+"-"ano
+		//fecha CON 3 SPINNERS, antes de ingresar todo, no debe permitir que todo este vacio.		
+		String fechaNacimiento = dia+"-"+mes+"-"+ano;
 		if (validarPersona(id,nombre,apellido,direccion,telefono,email,fechaNacimiento,sexo,ocupacion)==false) {
 			//se imprimiria que hay un dato errado
 			return false; 
@@ -38,9 +27,10 @@ public class Main {
 			return true;
 		}
 	}
+	private static boolean validarPersona(String id, String nombre, String apellido, String direccion, String telefono,
+			String email, String fechaNacimiento, String sexo, String ocupacion) {
 	//revisar formatos si se entraron correctamente
-	public boolean validarPerson(String id,String nombre,String apellido, String direccion,String telefono,String email,String fechaNacimiento,String sexo, String ocupacion) {
-		//id o cedula
+	//id o cedula
 		
 		if(!id.matches("[0-9]+") || id.length()!=11) {
 			return false;
@@ -64,6 +54,6 @@ public class Main {
 			return false;
 		}
 		return true;
-		
-	}
+		}
+
 }
