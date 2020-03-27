@@ -3,7 +3,6 @@ package Logico;
 public class Main {
 	 static Clinica clini = new Clinica();
 	
-	
 	public static void main(String[] args) {	
 		
 		crearPaciente("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22","masculino","trabajador");//ACÁ SE PASAN Y CREAN LOS DATOS PARA UN PACIENTE
