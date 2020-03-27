@@ -10,6 +10,7 @@ public class Main {
 		crearDoctor("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22","masculino","otorrino");
 		crearEnfermedad("covi19","lo que causa");
 		crearVacuna("ebola","lol");
+		crearConsulta("22","22","22",int idPaciente, int IdDoctor);
 		//DONDE SE PASAN LOS DATOS DE CREAR UN PACIENTE
 		
 	}
@@ -87,4 +88,11 @@ public class Main {
 		ControlVacunacion aux = new ControlVacunacion(nombreVacuna, descripcionVacuna);
 		clini.insertarVacunasbajovigilancia(aux);	
 	}		
+//CREAR CONSULTA
+	private static void crearConsulta(String diaPautado,String mesPautado, String anoPautado,int idPaciente,int IdDoctor) {
+	String fechaPautada = diaPautado+"-"+mesPautado+"-"+anoPautado;
+	consulta aux = new consulta(fechaPautada,idPaciente,IdDoctor,null,false,false); //diagnostico, realizada o destacada no se marcan el crear porque no ha pasado
+	clini.insertarConsulta(aux);
+	}
 }
+
