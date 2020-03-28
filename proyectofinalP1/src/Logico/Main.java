@@ -11,17 +11,9 @@ public class Main {
 		crearVacuna("ebola","lol");
 		crearConsulta("22","12345678901","12345678901");
 		//DONDE SE PASAN LOS DATOS DE CREAR UN PACIENTE
-	}
+}
 //BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
-
-	
-private static void crearConsulta(String fechaPautada,String idPaciente,String idDoctor) {
-	consulta aux = new consulta(fechaPautada, idPaciente, idDoctor); //diagnostico, realizada o destacada no se marcan el crear porque no ha pasado
-	clini.insertarConsulta(aux);	
-	}
-
-
-	//INGRESAR PACIENTE	
+//INGRESAR PACIENTE	
 	private static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String correoElectronico,String fechaNacimiento,String sexo,String ocupacion){
 		//String id limite de 11 digitos con guion automatizado a medida que se escribe, parte visual, pero se pasa aqui sin guion 
 		//fecha CON 3 SPINNERS, antes de ingresar todo, no debe permitir que todo este vacio.		
@@ -82,7 +74,12 @@ private static void crearConsulta(String fechaPautada,String idPaciente,String i
 //INGRESAR VACUNA
 	private static void crearVacuna(String nombreVacuna, String descripcionVacuna){
 		ControlVacunacion aux = new ControlVacunacion(nombreVacuna, descripcionVacuna);
-		clini.insertarVacunasbajovigilancia(aux);}
+		clini.insertarVacunasbajovigilancia(aux);
 }		
 //CREAR CONSULTA
+	private static void crearConsulta(String fechaPautada,String idPaciente,String idDoctor) {
+		consulta aux = new consulta(fechaPautada, idPaciente, idDoctor); //diagnostico, realizada o destacada no se marcan el crear porque no ha pasado
+		clini.insertarConsulta(aux);	
+		}
 
+}
