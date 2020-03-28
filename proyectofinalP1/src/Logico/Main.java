@@ -12,6 +12,7 @@ public class Main {
 		crearConsulta("22","12345678901","12345678901");
 		//DONDE SE PASAN LOS DATOS DE CREAR UN PACIENTE
 }
+	
 //BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
 //INGRESAR PACIENTE	
 	private static boolean crearPaciente(String id,String nombre,String apellido,String direccion,String telefono,String correoElectronico,String fechaNacimiento,String sexo,String ocupacion){
