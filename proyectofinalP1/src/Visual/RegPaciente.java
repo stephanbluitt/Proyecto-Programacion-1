@@ -38,9 +38,6 @@ public class RegPaciente extends JDialog {
 	private JTextField txtTelPaciente;
 	private ButtonGroup botones= new ButtonGroup();
 
-	/**
-	 * Launch the application.
-	 */
 	public static void main(String[] args) {
 		try {
 			RegPaciente dialog = new RegPaciente();
