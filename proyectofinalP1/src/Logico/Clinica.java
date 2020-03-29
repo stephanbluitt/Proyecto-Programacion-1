@@ -1,5 +1,4 @@
 package Logico;
-
 import java.util.ArrayList;
 
 public class Clinica {
@@ -9,7 +8,6 @@ public class Clinica {
 	private ArrayList <consulta> misConsultas;
 	private ArrayList <ControlEnfermedades> misEmfermedades;
 	private ArrayList <ControlVacunacion> misVacunas;
-	
 	public Clinica() {
 		super();
 		this.misPacientes= new ArrayList <Paciente>();
@@ -18,14 +16,13 @@ public class Clinica {
 		this.misEmfermedades= new ArrayList <ControlEnfermedades> ();
 		this.misVacunas= new ArrayList <ControlVacunacion> ();
 	}
-	
-	public static void main(String[] args) {	
-		
+	public static void main(String[] args) {
 		crearPaciente("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22");//ACÁ SE PASAN Y CREAN LOS DATOS PARA UN PACIENTE
 		crearDoctor("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22");
 		crearEnfermedad("covi19","lo que causa");
 		crearVacuna("ebola","lol");
 		crearConsulta("22","12345678901","12345678901");
+		
 	}
 	public void insertarVacunasbajovigilancia(ControlVacunacion aux){
 		misVacunas.add(aux);
@@ -152,5 +149,4 @@ public class Clinica {
 			consulta aux = new consulta(fechaPautada, idPaciente, idDoctor); //diagnostico, realizada o destacada no se marcan el crear porque no ha pasado
 			clini.insertarConsulta(aux);	
 			}
-	//
 }
