@@ -1,6 +1,7 @@
 package Logico;
 public class Main {
 	static Clinica clini = new Clinica();
+	
 	public static void main(String[] args) {	
 		
 		crearPaciente("12345678901","juan","peres","el real final calle 10","1234567890","juan@hfj.com","11","22","22");//ACÁ SE PASAN Y CREAN LOS DATOS PARA UN PACIENTE
@@ -8,7 +9,6 @@ public class Main {
 		crearEnfermedad("covi19","lo que causa");
 		crearVacuna("ebola","lol");
 		crearConsulta("22","12345678901","12345678901");
-
 }
 	
 //BASICAMENTE SE LE PASAN LOS PARAMETRO Y SI ESTOS SON VERDADEROS, SE PROCEDE A CREAR EL REGISTRO, SE DOCTOR O PACIENTE
@@ -81,5 +81,4 @@ public class Main {
 		clini.insertarConsulta(aux);	
 		}
 //
-	
 }
