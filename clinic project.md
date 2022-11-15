@@ -1,4 +1,4 @@
-# clinic project
+# clinic project summary
 
 # This project has the management of a database for a clinic.
 
